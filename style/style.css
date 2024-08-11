@@ -214,7 +214,7 @@ body {
     height: auto;
     width: 98%;
     margin: 0px auto;
-    background-color: #000000e0;
+    background-color: #000000;
 }
 
 .habit-section-title {
@@ -263,7 +263,70 @@ body {
 }
 
 /* change your habit section ends heres */
+/* run-sectioon start heres */
+.run-section {
+    width: 98%;
+    height: auto;
+    margin: 0px auto;
+    background-color: #000000;
 
+}
+
+.run-section-content {
+    max-width: 600px;
+    height: auto;
+    margin: 0px auto;
+    backdrop-filter: blur(300px);
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.run-section-text {
+    text-align: left;
+}
+
+.run-section-text a {
+    background-color: orangered;
+    padding: 7px 25px;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.run-section-text h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    /* margin: 10px 0px; */
+
+}
+
+.run-section-text p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.384);
+    margin-bottom: 30px;
+}
+
+.run-img {
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.run-img img {
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+}
+
+/* run-sectioon ends heres */
 
 /* Small device */
 @media screen and (max-width:576px) {
@@ -316,6 +379,28 @@ body {
         grid-gap: 2rem;
     }
 
+    /* run section start heres */
+    .run-section-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .run-section-text {
+        margin-top: 20px;
+        max-width: 300px;
+        height: 220px;
+        padding: 15px 20px 5px  20px;        
+    }
+
+    .run-img img{
+        height: 210px;
+        width: 250px;
+    }
+
+
+    .run-section-text a {
+        display: table;
+        margin: 0px;
+    }
 }
 
 /* larg device */
@@ -359,6 +444,29 @@ body {
     .habit-content {
         grid-template-columns: repeat(4, 1fr);
         padding: 70px;
+    }
+
+    /* run section start heres */
+    .run-section-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .run-section-text {
+        margin-top: 20px;
+        max-width: 300px;
+        height: 220px;
+        padding: 15px 20px 5px  20px;        
+    }
+
+    .run-img img{
+        height: 210px;
+        width: 250px;
+    }
+
+
+    .run-section-text a {
+        display: table;
+        margin: 0px;
     }
 
 }
