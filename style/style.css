@@ -78,10 +78,12 @@ body {
     font-weight: 600;
 }
 
-.top-header-right-icon .fa {
+/* 
+.top-header-right-icon img{
     color: white;
     font-size: 30px;
-}
+
+} */
 
 /* top-header style ends heres */
 
@@ -304,7 +306,6 @@ body {
     color: white;
     font-size: 25px;
     font-weight: 600;
-    /* margin: 10px 0px; */
 
 }
 
@@ -327,6 +328,137 @@ body {
 }
 
 /* run-sectioon ends heres */
+/* BMI calculator section start heres */
+.bmi-section {
+    border: 3px solid firebrick;
+    width: 98%;
+    margin: 0px auto;
+    background-color: #000000;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.bmi-top-content {
+    max-width: 400px;
+    border: 3px solid seagreen;
+}
+
+.bmi-top-content h1 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+
+.bmi-top-content p {
+    color: rgba(255, 255, 255, 0.372);
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.bmi-calc-box {
+    background: rgba(255, 255, 255, 0.258);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 3px solid forestgreen;
+
+}
+
+.bmi-chart {
+    border: 3px solid fuchsia;
+    max-width: 450px;
+}
+
+table,
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.338);
+    border-collapse: collapse;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.bmi-chart h2 {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0px;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.317);
+    font-size: 12px;
+}
+
+.bmi-chart table {
+    height: 150px;
+    width: 70%;
+}
+
+.your-bmi-calc {
+    height: 260px;
+    border: 3px solid gold;
+    max-width: 450px;
+
+}
+
+.your-bmi-calc-title-box {
+    max-width: 450px;
+    height: 80px;
+}
+
+.your-bmi-calc h1 {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.your-bmi-calc p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.361);
+}
+
+.bmo-form input,
+#sex {
+    width: 49%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.326);
+    color: rgb(255, 255, 255);
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#active-factor {
+    width: 99%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.443);
+    color: rgba(255, 255, 255, 0.728);
+    margin: 0px auto;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.input-name ::placeholder,
+#sex {
+    color: rgba(255, 255, 255, 0.594);
+}
+
+.input-name option {
+    color: black;
+}
+
+.calc-btn {
+    padding: 10px 35px;
+    border: none;
+    background-color: orangered;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+/* BMI calculator section ends heres */
+
 
 /* Small device */
 @media screen and (max-width:576px) {
@@ -388,10 +520,10 @@ body {
         margin-top: 20px;
         max-width: 300px;
         height: 220px;
-        padding: 15px 20px 5px  20px;        
+        padding: 15px 20px 5px 20px;
     }
 
-    .run-img img{
+    .run-img img {
         height: 210px;
         width: 250px;
     }
@@ -401,6 +533,19 @@ body {
         display: table;
         margin: 0px;
     }
+
+    /* bmi cacl start heres */
+
+    .bmi-top-content {
+        margin: 0px auto;
+    }
+
+    .your-bmi-calc {
+        height: 260px;
+        max-width: 600px;
+
+    }
+
 }
 
 /* larg device */
@@ -450,15 +595,15 @@ body {
     .run-section-content {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .run-section-text {
         margin-top: 20px;
         max-width: 300px;
         height: 220px;
-        padding: 15px 20px 5px  20px;        
+        padding: 15px 20px 5px 20px;
     }
 
-    .run-img img{
+    .run-img img {
         height: 210px;
         width: 250px;
     }
@@ -469,4 +614,21 @@ body {
         margin: 0px;
     }
 
+    /* bmi cacl start heres */
+
+    .bmi-top-content {
+        margin: 0px auto;
+    }
+
+    .bmi-calc-box {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+
+    }
+
+    .your-bmi-calc {
+        height: 260px;
+        max-width: 600px;
+
+    }
 }
